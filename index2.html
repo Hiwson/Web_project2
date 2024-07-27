@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fully responsive web</title>
+  <style>
+  /*css for mobile phones*/
+  @media screen and (min-width:400px){
+    *{box-sizing: border-box;}
+    body{background-color: darkkhaki;}
+    header{
+ 
+    }
+    li{
+      display: inline;
+      float:right;
+    }
+    #l1{
+      
+    }
+    .btn-holder{
+      margin:0% 20% 0% 35%;
+    }
+    .btn-holder>button:hover{
+      background-color:black;
+      color:white;
+    }
+    #srh{
+      position:absolute;
+      left:33%;
+      height:20px;
+      top:70px;
+    }
+    #big-img{
+      width:100%;
+      height:250px;
+    }
+    #small-img{
+      width:50px;
+      height:50px;
+      position:absolute;
+      left:20px;
+      top:270px;
+    }
+    #h4{
+      border:2px solid black;
+      width:100%;
+      height:39px;
+      padding-top:10px;
+      padding-bottom:auto;
+    }
+    .slide-img{
+      height:250px;
+      width:230px;
+    }
+    #ds-holder{
+      display:flex;
+      flex-flow:row;
+      gap:7px;
+    }
+    .tittles{
+      display:grid;
+      grid-template-columns: auto auto;
+    }
+    #h3{
+      text-align: right;
+    }
+    #btn3{
+      height:50px;
+      padding:5px 5px 5px 5px;
+    }
+    .btn4{
+      height:50px;
+      width:230px;
+    }
+    .btn2{
+      display:grid;
+      grid-template-columns:auto auto;
+    }
+    .btn-holder2{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-row-gap: 20px;
+    }
+    .middle-box{
+      border: 2px solid black;
+      margin:auto;
+      width:80%;
+      padding:10px 30% 10px ;
+      background: antiquewhite;
+    }
+    #img-container{
+      display:grid;
+      grid-template-columns: auto auto;
+    }
+    footer{
+      background-color:rgba(186, 188, 216, 1);
+      color:black;
+    }
+    .ft-div,ul{
+      display:inline;
+    }
+    .ft-list{
+      display:flex;
+      flex-flow:column;
+    }
+    .ft-div{
+      display:grid;
+      grid-template-columns: auto auto;
+    }
+    .exectra>li{
+      display: inline;
+    }
+  }
+    /*for pc
+    .ft-div{
+      display:grid;
+      grid-template-columns: auto auto auto auto auto;
+    }*/
+    
+    /*styles for pc*/
+    @media screen and (min-width:870px){
+    *{box-sizing: border-box;}
+    body{background-color:white;}
+    header{
+ 
+    }
+    li{
+      display: inline;
+      float:right;
+    }
+    #l1{
+      
+    }
+    .btn-holder{
+      margin:0% 20% 0% 35%;
+    }
+    .btn-holder>button:hover{
+      background-color:black;
+      color:white;
+    }
+    #srh{
+      position:absolute;
+      left:33%;
+      height:20px;
+      top:70px;
+    }
+    #big-img{
+      width:100%;
+      height:250px;
+    }
+    #small-img{
+      width:50px;
+      height:50px;
+      position:absolute;
+      left:20px;
+      top:270px;
+    }
+    #h4{
+      border:2px solid black;
+      width:100%;
+      height:39px;
+      padding-top:10px;
+      padding-bottom:auto;
+    }
+    .slide-img{
+      height:250px;
+      width:230px;
+    }
+    #ds-holder{
+      display:flex;
+      flex-flow:row;
+      gap:7px;
+    }
+    .tittles{
+      display:grid;
+      grid-template-columns: auto auto;
+    }
+    #h3{
+      text-align: right;
+    }
+    #btn3{
+      height:50px;
+      padding:5px 5px 5px 5px;
+    }
+    .btn4{
+      height:50px;
+      width:230px;
+    }
+    .btn-holder2{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+    .middle-box{
+      border: 2px solid black;
+      margin:auto;
+      width:80%;
+      padding:10px 30% 10px ;
+      background: antiquewhite;
+    }
+    #img-container{
+      display:grid;
+      grid-template-columns: auto auto auto auto;
+    }
+    .big-div{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      column-gap:20px;
+    }
+    footer{
+      background-color:rgba(186, 188, 216, 1);
+      color:black;
+    }
+    .ft-div,ul{
+      display:inline;
+    }
+    .ft-list{
+      display:flex;
+      flex-flow:column;
+    }
+    .ft-div{
+      display:grid;
+      grid-template-columns: auto auto auto auto auto;
+    }
+    #li{
+      border:2px solid black;
+    }
+    #ft-list{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    .exectra>li{
+      display: inline;
+    }
+    }
+  </style>
+  </head>
+
+<body>
+  <header>
+    <ul id="l1">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+      <li>list 4</li>
+      <li>list 5</li>
+      <li>list 6</li>
+      <li>list 7</li>
+    </ul>
+  </header><hr>
+  
+  <div class="btn-holder">
+    <button>button1</button>
+    <button>button2</button>
+  </div><br>
+  
+  <div id="biggy">
+  <input type="search" id="srh" placeholder="placeholder">
+  <img src="/Project wireframe/images/IMG-20240523-WA0031.jpg" alt="" id="big-img">
+  <img src="/HTML Testings/7.jpg" alt="" id="small-img">
+  </div>
+  
+    <h4 id="h4"><marquee behavior="" direction="left">This is a moving text</marquee></h4>
+  <br>
+  <div class="tittles">
+    <h3>Tittles for leaders</h3>
+    <h3 id="h3">Tittles</h3>
+  </div>
+  <div id="img-container">
+    <div id="img-holder">
+    <img src="/Project wireframe/images/Founder Leader.jpg" alt="" class="slide-img">
+    <h4>Heading</h4>
+    <div id="ds-holder">
+      <p>description
+      <br>description 2
+      </p>
+      <button id="btn3">button 3</button>
+    </div>
+    </div>
+
+    <div id="img-holder">
+    <img src="/Project wireframe/images/Founder Leader.jpg" alt="" class="slide-img">
+    <h4>Heading</h4>
+    <div id="ds-holder">
+      <p>description
+      <br>description 2
+      </p>
+      <button id="btn3">button 3</button>
+    </div>
+    </div>
+  
+
+    <div id="img-holder">
+    <img src="/Project wireframe/images/Founder Leader.jpg" alt="" class="slide-img">
+    <h4>Heading</h4>
+    <div id="ds-holder">
+      <p>description
+      <br>description 2
+      </p>
+      <button id="btn3">button 3</button>
+    </div>
+    </div>  
+
+    <div id="img-holder">
+    <img src="/Project wireframe/images/Founder Leader.jpg" alt="" class="slide-img">
+    <h4>Heading</h4>
+    <div id="ds-holder">
+      <p>description
+      <br>description 2
+      </p>
+      <button id="btn3">button 3</button>
+    </div>
+    </div>
+  </div>    
+    <div class="middle-box">text in box</div><br>
+    
+    <h3>Heading for recommendation</h3>
+    <div class="big-div">
+        <img src="/Project wireframe/images/leader.jpg" alt="">
+        <p>this is a text and description that is there for <br>
+        tgis is for recommendations for the heueueur eheywhu <br>
+        heyeheyeh beheyfe hhfeysge hdhegehe hssgdgshshehe dhe <br>
+        hahwhehehhe hshehehe ehehshe heeheuue ehehhe <br></p>
+      
+      <p>hrurjrjjejejr jrhdhehe djdjdhf fjdjdjf djfjfir jshg <br>
+      hdheue hehdur jehdhd jehegge hwhwyw whehrur uebeue <br>
+      hsheue ehehrur jejuh7e uehur jdheurur jdjurur jehhajeue <br>
+      wbheheu hahehe huehh heheye hfjeu hdhdue fuduue djeuud <br></p>
+      
+      <div class="btn2" style="background-color:red;">
+        <button class="btn4">button x</button>
+        <button class="btn4">button y</button>
+      </div>
+    </div><br>
+  <div class="btn-holder2">
+    <button class="btn4">button1</button>
+    <button class="btn4">button2</button>
+    <button class="btn4">button3</button>
+    <button class="btn4">button4</button>
+  </div><br>
+  <footer class="ft">
+    <div class="ft-div">
+      <ul class="ft-list">
+        <h4>Heading at ft</h4>
+        <li>ft list 1</li>
+        <li>ft list 2</li>
+        <li>ft list 3</li>
+        <li>ft list 4</li>
+        <li>ft list 5</li>
+      </ul>
+      <ul class="ft-list">
+        <h4>Heading at ft</h4>
+        <li>ft list 1</li>
+        <li>ft list 2</li>
+        <li>ft list 3</li>
+        <li>ft list 4</li>
+        <li>ft list 5</li>
+      </ul>
+      <ul class="ft-list">
+        <h4>Heading at ft</h4>
+        <li>ft list 1</li>
+        <li>ft list 2</li>
+        <li>ft list 3</li>
+        <li>ft list 4</li>
+        <li>ft list 5</li>
+      </ul>
+      <ul class="ft-list">
+        <h4>Heading at ft</h4>
+        <li>ft list 1</li>
+        <li>ft list 2</li>
+        <li>ft list 3</li>
+        <li>ft list 4</li>
+        <li>ft list 5</li>
+      </ul>
+      <ul class="ft-list" id="ft-list">
+        <h4>Heading at ft</h4>
+        <li id="li">ft list 1</li>
+        <li id="li">ft list 2</li>
+        <li id="li">ft list 3</li>
+        <li id="li">ft list 4</li>
+        <li id="li">ft list 5</li>
+        <li id="li">ft list 6</li>
+        <li id="li">ft list 7</li>
+        <li id="li">ft list 8</li>
+        <li id="li">ft list 9</li>
+      </ul>
+     </div>
+  </footer>
+  <div class="exectra">
+    <li>list</li>
+    <li>list</li>
+    <li>list</li>
+    <li>list</li>
+    <li>list</li>
+  </div>
+</body>
+
+</html>
